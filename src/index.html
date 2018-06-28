@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Songs</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- for tooltips -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  <style>
+    .panel-group{
+      max-width: 75%;
+      margin: 5% auto;
+    }
+    .mHeaders li{
+      background-color: #008CBA;
+      color: aliceblue;
+    }
+    .mHeaders li:nth-child(4){
+      width: 48px;
+    }
+    .mHeaders li:nth-child(5){
+      width: 48px;
+    }
+    .mHeaders li:last-child{
+      width: 48px;
+    }
+    ul.list-group:after {
+      clear: both;
+      display: block;
+      content: "";
+    }
+
+    .list-group-item {
+      float: left;
+    }
+    .list-group li{
+      max-width: 30%;
+      min-width: 50px;
+      min-height: 48px;
+      max-height: 48px;
+    }
+    .list-group li:first-child{
+      width: 200px;
+      cursor: pointer;
+    }
+    .list-group li:nth-child(2){
+      width: 200px;
+    }
+    .list-group li:nth-child(3){
+      width: 110px;
+    }
+    .mZip{
+      background: url("http://www.kronusproductions.com/songs_angular/assets/images/mZip.png");
+      display: block !important;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+    .mYt{
+      background: url("http://www.kronusproductions.com/songs_angular/assets/images/youtube-icon_48x48.png");
+      display: block !important;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+    .mAudio{
+      background: url("http://www.kronusproductions.com/songs_angular/assets/images/volume.png");
+      display: block !important;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="panel-group">
+    <app-songs></app-songs>
+  </section>
+</body>
+</html>

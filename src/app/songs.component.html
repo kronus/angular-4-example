@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+</head>
+<body>
+  <h1>Songs</h1>
+  <ng-template #processing>
+    <img *ngIf="requestProcessing" src="../assets/images/loading.gif">
+  </ng-template>
+  </div>
+  <h3>Songs Details</h3>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>orignal_band</th>
+      <th>description</th>
+      <th>date_posted</th>
+      <th>download_midi_tabs</th>
+      <th>youtube_link</th>
+      <th>download_guitar_m4v</th>
+    </tr>
+    <tr *ngFor="let song of allSongs" >
+      <td>{{song.id}}</td>
+      <td>{{song.title}}</td>
+      <td>{{song.orignal_band}}</td>
+      <td>{{song.description}}</td>
+      <td>{{song.date_posted}}</td>
+      <td>{{song.download_midi_tabs}}</td>
+      <td>{{song.youtube_link}}</td>
+      <td>{{song.download_guitar_m4v}}</td>
+    </tr>
+  </table>
+</body>
+</html>
