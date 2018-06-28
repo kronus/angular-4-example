@@ -4,12 +4,12 @@ header("Content-Type: application/json; charset=UTF-8");
 global $server;
 $server = "localhost";
 global $user;
-$user = "root";
+$user = "someU";
 global $pwd;
-// $pwd = "gohome"; // production
- $pwd = "gohomE1k"; // local
+// $pwd = "someP"; // production
+ $pwd = "someP"; // local
 global $db;
-$db = "kronus";
+$db = "someDB";
 
  //open connection to mysql db
 $connection = mysqli_connect($server,$user,$pwd,$db) or die("Error " . mysqli_error($connection));
