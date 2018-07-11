@@ -1,5 +1,7 @@
 # Songs
 
+Need to note that this project was made with Angular 6, as you can see below by the git documentation. I thought I was working with Angular 4 and thus the name of the project.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
